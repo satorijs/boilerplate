@@ -1,0 +1,45 @@
+{
+  "name": "@cordisjs/boilerplate",
+  "version": "0.0.0",
+  "packageManager": "yarn@4.1.0",
+  "private": true,
+  "files": [
+    ".env",
+    "cordis.yml"
+  ],
+  "license": "AGPL-3.0",
+  "workspaces": [
+    "external/*",
+    "external/*/external/*",
+    "external/*/external/*/packages/*",
+    "external/*/packages/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "yakumo build",
+    "bump": "yakumo version",
+    "dep": "yakumo upgrade",
+    "pub": "yakumo publish",
+    "dev": "cross-env NODE_ENV=development cordis start --import tsx --import yml-register",
+    "start": "cordis start"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "cross-env": "^7.0.3",
+    "esbuild": "^0.18.20",
+    "tsx": "^4.7.1",
+    "typescript": "^5.4.3",
+    "yakumo": "^1.0.0-beta.13",
+    "yakumo-esbuild": "^1.0.0-beta.5",
+    "yakumo-tsc": "^1.0.0-beta.3",
+    "yml-register": "^1.2.5"
+  },
+  "dependencies": {
+    "@cordisjs/plugin-config": "^2.8.5",
+    "@cordisjs/plugin-hmr": "^0.2.1",
+    "@cordisjs/plugin-insight": "^3.5.1",
+    "@cordisjs/plugin-server": "^0.2.1",
+    "@satorijs/satori": "^3.7.0",
+    "cordis": "^3.14.0"
+  }
+}

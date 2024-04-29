@@ -1,0 +1,41 @@
+{
+  "extends": "./tsconfig.base",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      // cordis
+      "@cordisjs/plugin-*": [
+        "external/*/packages/core/src",
+        "external/http/packages/*/src",
+        "external/server/packages/*/src",
+        "external/webui/plugins/*/src",
+      ],
+      "@cordisjs/*/lib": [
+        "external/webui/packages/*/src",
+      ],
+      "@cordisjs/*": [
+        "external/webui/packages/*/src",
+      ],
+      "cordis-plugin-*": [
+        "external/*/src",
+        "external/*/packages/core/src",
+        "packages/*/src",
+      ],
+
+      // minato
+      "@minatojs/driver-*": ["external/minato/packages/*/src"],
+      "@minatojs/*": ["external/minato/packages/*/src"],
+
+      // satori
+      "@satorijs/adapters-*": ["external/satori/adapters/*/src"],
+      "@satorijs/*": ["external/satori/packages/*/src"],
+
+      "*": [
+        "external/*/packages/core/src",
+        "external/*/src",
+        "packages/*/src",
+      ],
+    },
+  },
+  "files": [],
+}

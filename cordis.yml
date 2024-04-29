@@ -1,0 +1,15 @@
+- id: znqu9d
+  name: '@cordisjs/plugin-server'
+  config:
+    port: 6140
+- id: 0txz1f
+  name: '@cordisjs/plugin-hmr'
+- id: 1n9z0q
+  name: cordis/group
+  config:
+    - id: xh7rpr
+      name: '@cordisjs/plugin-webui'
+    - id: el17rl
+      name: '@cordisjs/plugin-insight'
+    - id: ks2osk
+      name: '@cordisjs/plugin-config'
