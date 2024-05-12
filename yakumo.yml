@@ -2,9 +2,8 @@
   config:
     pipeline:
       build:
-        - tsc
         - esbuild
-        - client
+        - tsc
       clean:
         - tsc --clean
 - name: yakumo-esbuild

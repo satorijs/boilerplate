@@ -28,6 +28,7 @@
 
       // satori
       "@satorijs/adapters-*": ["external/satori/adapters/*/src"],
+      "@satorijs/plugin-*": ["external/satori/packages/*/src"],
       "@satorijs/*": ["external/satori/packages/*/src"],
 
       "*": [

@@ -1,15 +1,137 @@
-- id: znqu9d
-  name: '@cordisjs/plugin-server'
+- id: 753tcx
+  name: cordis/group
+  label: Essential
   config:
-    port: 6140
-- id: 0txz1f
-  name: '@cordisjs/plugin-hmr'
+    - id: znqu9d
+      name: '@cordisjs/plugin-server'
+      config:
+        port: 6140
+    - id: 3og235
+      name: minato
+    - id: mus46i
+      name: '@satorijs/core'
+    - id: wxjq5o
+      name: '@cordisjs/plugin-http'
+    - id: c21efg
+      name: '@cordisjs/plugin-proxy-agent'
+- id: r765zv
+  name: cordis/group
+  label: Database
+  config:
+    - id: 7p9qp0
+      name: '@minatojs/driver-mongo'
+      disabled: true
+    - id: romc47
+      name: '@minatojs/driver-mysql'
+      disabled: true
+    - id: 3dkeha
+      name: '@minatojs/driver-postgres'
+      disabled: true
+    - id: c5rxp6
+      name: '@minatojs/driver-sqlite'
+      disabled: true
+- id: zgzdto
+  name: cordis/group
+  label: Adapter
+  config:
+    - id: gcfc7k
+      name: '@satorijs/adapter-dingtalk'
+      disabled: true
+      inject:
+        - satori
+    - id: c9z6u4
+      name: '@satorijs/adapter-discord'
+      disabled: true
+      inject:
+        - satori
+    - id: 7lo35s
+      name: '@satorijs/adapter-kook'
+      disabled: true
+      inject:
+        - satori
+    - id: r65zpr
+      name: '@satorijs/adapter-lark'
+      disabled: true
+      inject:
+        - satori
+    - id: x0rqol
+      name: '@satorijs/adapter-line'
+      disabled: true
+      inject:
+        - satori
+    - id: st3qy0
+      name: '@satorijs/adapter-mail'
+      disabled: true
+      inject:
+        - satori
+    - id: xb0ke6
+      name: '@satorijs/adapter-matrix'
+      disabled: true
+      inject:
+        - satori
+    - id: unv8r0
+      name: '@satorijs/adapter-qq'
+      disabled: true
+      inject:
+        - satori
+    - id: xmjb8u
+      name: '@satorijs/adapter-satori'
+      disabled: true
+      inject:
+        - satori
+    - id: xyznms
+      name: '@satorijs/adapter-slack'
+      disabled: true
+      inject:
+        - satori
+    - id: rsiuv5
+      name: '@satorijs/adapter-telegram'
+      disabled: true
+      inject:
+        - satori
+    - id: pisxhl
+      name: '@satorijs/adapter-wechat-official'
+      disabled: true
+      inject:
+        - satori
+    - id: bk9zwx
+      name: '@satorijs/adapter-wecom'
+      disabled: true
+      inject:
+        - satori
+    - id: 0bvcbw
+      name: '@satorijs/adapter-whatsapp'
+      disabled: true
+      inject:
+        - satori
+    - id: 7eo25t
+      name: '@satorijs/adapter-zulip'
+      disabled: true
+      inject:
+        - satori
+- id: x1qu18
+  name: cordis/group
+  label: Develop
+  config:
+    - id: 0txz1f
+      name: '@cordisjs/plugin-hmr'
 - id: 1n9z0q
   name: cordis/group
+  label: WebUI
   config:
     - id: xh7rpr
       name: '@cordisjs/plugin-webui'
-    - id: el17rl
-      name: '@cordisjs/plugin-insight'
     - id: ks2osk
       name: '@cordisjs/plugin-config'
+- id: iyq73n
+  name: cordis/group
+  label: Satori
+  config:
+    - id: ggevvd
+      name: '@satorijs/plugin-server'
+      inject:
+        - satori
+    - id: vprney
+      name: '@satorijs/plugin-database'
+      inject:
+        - satori
