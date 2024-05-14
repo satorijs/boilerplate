@@ -1,0 +1,36 @@
+name: npm
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - v*
+  release:
+    types:
+      - created
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          registry-url: https://registry.npmjs.org/
+
+      - name: Install dependencies
+        run: yarn --no-immutable
+
+      - name: Publish
+        if: ${{ env.NODE_AUTH_TOKEN }}
+        run: bash .github/workflows/npm.sh
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_REF: ${{ github.ref }}
+          GITHUB_SHA: ${{ github.sha }}

@@ -1,13 +1,12 @@
 {
   "name": "@satorijs/boilerplate",
-  "version": "0.0.0",
-  "packageManager": "yarn@4.1.0",
+  "version": "0.0.1",
   "private": true,
   "files": [
     ".env",
     "cordis.yml"
   ],
-  "license": "AGPL-3.0",
+  "license": "MIT",
   "workspaces": [
     "external/*",
     "external/*/external/*",
@@ -30,7 +29,7 @@
     "esbuild": "^0.18.20",
     "tsx": "^4.7.1",
     "typescript": "^5.4.3",
-    "yakumo": "^1.0.0-beta.14",
+    "yakumo": "^1.0.0-beta.15",
     "yakumo-esbuild": "^1.0.0-beta.5",
     "yakumo-tsc": "^1.0.0-beta.3",
     "yml-register": "^1.2.5"
