@@ -1,6 +1,6 @@
 {
   "name": "@satorijs/boilerplate",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "files": [
     ".env",
@@ -35,9 +35,9 @@
     "yml-register": "^1.2.5"
   },
   "dependencies": {
-    "@cordisjs/plugin-config": "^2.8.6",
     "@cordisjs/plugin-hmr": "^0.2.1",
     "@cordisjs/plugin-http": "^0.4.2",
+    "@cordisjs/plugin-manager": "^0.1.0",
     "@cordisjs/plugin-proxy-agent": "^0.3.0",
     "@cordisjs/plugin-server": "^0.2.2",
     "@cordisjs/plugin-webui": "^0.1.1",
@@ -49,6 +49,7 @@
     "@satorijs/core": "^4.0.0",
     "@satorijs/plugin-database": "^0.1.1",
     "@satorijs/plugin-server": "^2.5.0",
+    "@satorijs/plugin-status": "^0.1.0",
     "cordis": "^3.15.0",
     "minato": "^3.3.0"
   }

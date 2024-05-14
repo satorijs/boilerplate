@@ -122,7 +122,7 @@
     - id: xh7rpr
       name: '@cordisjs/plugin-webui'
     - id: ks2osk
-      name: '@cordisjs/plugin-config'
+      name: '@cordisjs/plugin-manager'
 - id: iyq73n
   name: cordis/group
   label: Satori
@@ -133,5 +133,9 @@
         - satori
     - id: vprney
       name: '@satorijs/plugin-database'
+      inject:
+        - satori
+    - id: 7f2qo8
+      name: '@satorijs/plugin-status'
       inject:
         - satori
