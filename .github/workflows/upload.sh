@@ -1,7 +1,7 @@
 variant=$1
 
 name=$(cat package.json | jq -r '.name' | cut -d / -f 2)
-tag_name=$(gh release view --json name --jq .name)
+tag_name=$(gh release view --json tagName --jq .tagName)
 upload_file=$RUNNER_TEMP/$name-$tag_name-$variant.zip
 
 echo name: $name

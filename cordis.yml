@@ -123,6 +123,8 @@
       name: '@cordisjs/plugin-webui'
     - id: ks2osk
       name: '@cordisjs/plugin-manager'
+    - id: 4cj730
+      name: '@cordisjs/plugin-notifier'
 - id: iyq73n
   name: cordis/group
   label: Satori
