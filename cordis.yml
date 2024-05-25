@@ -2,22 +2,22 @@
   name: cordis/group
   label: Essential
   config:
-    - id: znqu9d
-      name: '@cordisjs/plugin-server'
-      config:
-        port: 6140
-    - id: 3og235
-      name: minato
-    - id: mus46i
-      name: '@satorijs/core'
     - id: wxjq5o
       name: '@cordisjs/plugin-http'
     - id: c21efg
       name: '@cordisjs/plugin-proxy-agent'
+    - id: znqu9d
+      name: '@cordisjs/plugin-server'
+      config:
+        port: 6140
+    - id: ggevvd
+      name: '@cordisjs/plugin-server-proxy'
 - id: r765zv
   name: cordis/group
   label: Database
   config:
+    - id: 3og235
+      name: minato
     - id: 7p9qp0
       name: '@minatojs/driver-mongo'
       disabled: true
@@ -129,8 +129,14 @@
   name: cordis/group
   label: Satori
   config:
+    - id: mus46i
+      name: '@satorijs/core'
     - id: ggevvd
       name: '@satorijs/plugin-server'
+      inject:
+        - satori
+    - id: wrydgi
+      name: '@satorijs/plugin-chat'
       inject:
         - satori
     - id: vprney
