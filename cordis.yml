@@ -10,8 +10,6 @@
       name: '@cordisjs/plugin-server'
       config:
         port: 6140
-    - id: ggevvd
-      name: '@cordisjs/plugin-server-proxy'
 - id: r765zv
   name: cordis/group
   label: Database
