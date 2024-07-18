@@ -1,10 +1,16 @@
-- name: yakumo
+- id: fsk934
+  name: yakumo
   config:
     pipeline:
       build:
         - esbuild
         - tsc
+        - client
       clean:
         - tsc --clean
-- name: yakumo-esbuild
-- name: yakumo-tsc
+- id: 6zjndk
+  name: yakumo-tsc
+- id: 7v70uh
+  name: yakumo-esbuild
+- id: z08xjp
+  name: '@cordisjs/client/lib'
